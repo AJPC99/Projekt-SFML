@@ -14,7 +14,7 @@ void PopulationCreator::createPeople(int healthOfHumans,
 	int numberOfHumans, int numberOfSickHumans,
 	int numberOfDoctors, int numberOfGraftingDoctors, const std::vector<Position>& lands)
 {
-	RandomGenerator rand(lands.size(), (int)time(NULL));
+	RandomGenerator rand(lands.size(), 324);
 	std::vector<bool> isPerson(lands.size());
 	for (auto i : isPerson)
 		isPerson[i] = false;
